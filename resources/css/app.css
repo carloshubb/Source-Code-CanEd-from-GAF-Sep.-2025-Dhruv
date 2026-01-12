@@ -1,0 +1,272 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:wght@300;400;600;700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,800;0,900;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@layer base {
+
+    @font-face {
+            font-family: 'Futura';
+            src: local('Futura Light BT'), local('FuturaBT-Light'),
+                url('/assets/fonts/FuturaBT-Light.woff2') format('woff2'),
+                url('/assets/fonts/FuturaBT-Light.woff') format('woff');
+            font-weight: 300;
+            font-style: normal;
+            font-display: swap;
+        }
+
+    @font-face {
+        font-family: 'FuturaItalic';
+        src: local('Futura Light Italic BT'), local('FuturaBT-LightItalic'),
+            url('/assets/fonts/FuturaBT-LightItalic.woff2') format('woff2'),
+            url('/assets/fonts/FuturaBT-LightItalic.woff') format('woff');
+        font-weight: 300;
+        font-style: italic;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: 'FuturaMedium';
+        src: local('Futura Medium BT'), local('FuturaBT-Medium'),
+            url('/assets/fonts/FuturaBT-Medium.woff2') format('woff2'),
+            url('/assets/fonts/FuturaBT-Medium.woff') format('woff');
+        font-weight: 500;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: 'FuturaBold';
+        src: local('Futura-Bold'),
+            url('/assets/fonts/Futura-Bold.woff2') format('woff2'),
+            url('/assets/fonts/Futura-Bold.woff') format('woff');
+        font-weight: 500;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: 'FuturaHeavy';
+        src: local('Futura Heavy Italic BT'), local('FuturaBT-HeavyItalic'),
+            url('/assets/fonts/FuturaBT-HeavyItalic.woff2') format('woff2'),
+            url('/assets/fonts/FuturaBT-HeavyItalic.woff') format('woff');
+        font-weight: 900;
+        font-style: italic;
+        font-display: swap;
+    }
+    @font-face {
+      font-family: 'FuturaMdCnBT';
+      src: local('Futura Medium Condensed BT'), local('FuturaBT-MediumCondensed'),
+        url('/assets/fonts/FuturaBT-MediumCondensed.woff2') format('woff2'),
+        url('/assets/fonts/FuturaBT-MediumCondensed.woff') format('woff');
+      font-weight: 500;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'FuturaBdCnBT';
+      src: local('Futura Bold Condensed BT'), local('FuturaBT-BoldCondensed'),
+        url('/assets/fonts/FuturaBT-BoldCondensed.woff2') format('woff2'),
+        url('/assets/fonts/FuturaBT-BoldCondensed.woff') format('woff');
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
+    }
+}
+@layer components{
+    .can-edu-h1{
+      font-size:theme('fontSize.4xl') ;
+      color:theme('colors.primary') ;
+      font-family: theme('fontFamily.FuturaMdCnBT');
+    }
+    .can-edu-h2{
+      font-size:theme('fontSize.2xl') ;
+      color: theme('colors.dark');
+     font-family: theme('fontFamily.FuturaMedium') ;
+     font-weight: theme('fontWeight.semibold');
+    }
+    .can-edu-p{
+      font-size:theme('fontSize.base') ;
+      font-weight:theme('fontWeight.semibold') ;
+      color: theme('colors.secondaryDark');
+    }
+    .can-edu-card-h{
+      font-size: theme('fontSize.xl');
+      font-family: theme('fontFamily.FuturaBold');
+      color: theme('colors.dark');
+    }
+    .can-edu-p p strong{
+      font-size:theme('fontSize.2xl') ;
+      color: theme('colors.dark');
+      font-family: theme('fontFamily.FuturaMedium') ;
+      font-weight: theme('fontWeight.semibold');
+    }
+    .can-edu-p p a{
+      word-wrap: break-word;
+      color: #007bff;
+    }
+    .can-edu-banner{
+      width: 1920px;
+      height: 400px;
+    }
+    .can-edu-card-p{
+      font-size:theme('fontSize.base') ;
+      font-weight:theme('fontWeight.semibold') ;
+      color: theme('colors.secondaryDark');
+    }
+    /* .can-edu-btn{
+      @apply bg-primary text-white hover:bg-dark rounded text-sm;
+    } */
+  }
+
+
+  body {
+    /* font-family: 'Nunito', sans-serif; */
+    font-family: 'Roboto', sans-serif;
+  }
+  .heading1{
+    font-family: 'FuturaMdCnBT';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 110%;
+    color: #b1040e;
+  }
+  .can-edu-h2{
+    font-size:theme('fontSize.3xl') ;
+    color: theme('colors.dark');
+   font-family: theme('fontFamily.FuturaMdCnBT') ;
+   font-weight: theme('fontWeight.medium');
+   /* text-transform: capitalize; */
+  }
+  .can-edu-btn-fill {
+    background-color: #b1040e !important;
+    color: #ffffff !important;
+    border-radius: 4px;
+    font-family: 'FuturaMdCnBT';
+    font-size: 18px;
+    padding: 8px 20px;
+    border: 1px solid #b1040e;
+    text-align: center;
+    white-space: nowrap;
+  
+  }
+  .can-edu-btn-fill:hover{
+    background-color: #C1363E !important;
+    border-color: #C1363E;
+  }
+  .can-edu-btn-fill:focus {
+    background-color: #b1040e !important;
+  }
+  .can-edu-btn-fill:active {
+    background-color: #b1040e !important;
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .heading1, h1, .can-edu-h1{
+      font-size: 30px;
+      line-height: 110%;
+    }
+    .heading2, .heading2 a, h2 {
+      font-size: 30px !important;
+      line-height: 120%;
+    }
+    .can-edu-h2{
+      font-size: 30px;
+      line-height: 120%;
+    }
+    .can-edu-h4{
+      font-size: 20px;
+    }
+    .can-edu-p, p{
+      font-size: 16px;
+      line-height: 130%;
+    }
+    .can-edu-btn-fill {
+      font-size: 16px;
+    }
+    [aria-label="Pagination Navigation"] a,
+    [aria-label="Pagination Navigation"] p{
+      font-size: 14px !important;
+    }
+    .heading3, h3{
+      font-size: 24px;
+      line-height: 120%;
+    }
+    li a, button a, a{
+      font-size: 16px;
+      line-height: 130%;
+    }
+    .card_heading, .card_heading a, h3.card_heading{
+      font-size: 20px;
+      line-height: 28px;
+      margin-bottom: 4px !important;
+    }
+    .can-edu-card-p, .can-edu-card-p p{
+      font-size: 14px;
+    }
+  }
+  /* Small devices  */
+  @media only screen and (max-width: 425px) {
+    .heading1, h1{
+      font-size: 30px !important;
+      line-height: 120%;
+    }
+    .can-edu-h1{
+      font-size: 30px;
+      line-height: 120%;
+    }
+    .heading2, .heading2 a, h2 {
+      font-size: 24px !important;
+      line-height: 120%;
+    }
+    .can-edu-h2{
+      font-size: 24px;
+      line-height: 120%;
+    }
+    .can-edu-h4{
+      font-size: 18px;
+    }
+    .can-edu-p, p{
+      font-size: 16px;
+      line-height: 130%;
+    }
+    .can-edu-btn-fill {
+      font-size: 16px;
+    }
+  }
+  ::-webkit-scrollbar{
+    width:10px;
+    height: 5px;
+  }
+  ::-webkit-scrollbar-track{
+    background:#f1f1f1
+  }
+  ::-webkit-scrollbar-thumb{
+    background:#8f0007;
+    border-radius:5px
+  }
+  ::-webkit-scrollbar-thumb:hover{
+    background:#C1363E
+  }
+.can-admin-h2{
+  color: #b1040e;
+  font-size: 30px;
+  font-family: 'FuturaMdCnBT';
+  font-weight: 500;
+}
+
+  [type='checkbox']:checked, [type='radio']:checked{
+    background-color: #b1040e !important;
+  }
+
+  /* [data-filepond-item-state=processing-complete] .filepond--action-revert-item-processing svg{ */
+    .filepond--file-action-button.filepond--file-action-button svg{
+      border: 1px solid #b1040e;
+      border-radius: 50%;
+      color: #b1040e;
+      background: #ffffff;
+    }

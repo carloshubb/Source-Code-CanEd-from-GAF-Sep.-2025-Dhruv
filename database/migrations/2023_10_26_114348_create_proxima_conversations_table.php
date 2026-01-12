@@ -1,0 +1,43 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('proxima_conversations', function (Blueprint $table) {
+            $table->id();
+            $table
+                ->foreignId('customer_id')
+                ->nullable()
+                ->constrained('customers')
+                ->onUpdate('cascade')
+                ->onDelete('cascade');
+            $table
+                ->foreignId('admin_id')
+                ->nullable()
+                ->constrained('users')
+                ->onUpdate('cascade')
+                ->onDelete('cascade');
+            $table->timestamps();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::dropIfExists('proxima_conversations');
+    }
+};

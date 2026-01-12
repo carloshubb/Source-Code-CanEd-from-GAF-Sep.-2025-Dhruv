@@ -1,0 +1,87 @@
+<div style="padding:20px">
+    <table style="width: 100%;margin-bottom: 24px;" cellpadding="0" cellspacing="0" role="none">
+        <tr>
+            <td style="width: 100%; padding: 0; margin: 0;">
+                <img src="{{ asset('assets/images/Email-Banner.jpg') }}" alt="Canedu Banner" style="width: 100%; display: block;">
+            </td>
+        </tr>
+    </table>
+
+    <h3 style="margin: 10px 0; text-align: left; font-size: 24px; line-height: 24px; color: #000;">Dear {{ $ambassador['name'] }},<h3>
+    <p style="margin: 0 0 10px; text-align: left; font-size: 16px; color: #000;">Congratulations on becoming an ambassador for {{ $ambassador['school_name'] }}! We are thrilled to have
+        you on board
+        and excited about the valuable role you will play in our school community. This email serves as a warm
+        welcome and provides essential information to help you get started as a school ambassador.
+    </p>
+    <p style="margin: 0 0 10px; text-align: left; font-size: 16px; color: #000;">As a school ambassador, you will have the opportunity to engage with students, address their queries, and
+        represent {{ $ambassador['school_name'] }} in a positive light. We appreciate your dedication to
+        enhancing the student experience and fostering a supportive environment within our school community.</p>
+    <p style="margin: 0 0 10px; text-align: left; font-size: 16px; color: #000;">To begin your journey as a school ambassador, here are a few key details and steps you need to follow:
+    </p>
+    <p style="margin: 0 0 10px; text-align: left; font-size: 16px; color: #000;">Your Ambassador Dashboard is your go-to platform for managing your ambassador activities and accessing
+        resources. We have created a personalized dashboard for you, where you can find all the necessary tools
+        and information. Please find your login credentials below:</p>
+    <h1 style="margin: 0 0 16px; text-align: left; font-size: 24px; line-height: 24px; color: #000;">URL : {{ env('APP_URL') . '/en/login' }}</h1>
+    <p style="margin: 0 0 10px; text-align: left; font-size: 16px; color: #000;">Username : {{ $ambassador['email'] }}</p>
+    <p style="margin: 0 0 10px; text-align: left; font-size: 16px; color: #000;">Phone : {{ $ambassador['password'] }}</p>
+
+    <p style="margin: 0 0 10px; text-align: left; font-size: 16px; color: #000;">We are grateful for your commitment to serving as a school ambassador and fostering a positive and
+        inclusive environment at {{ $ambassador['school_name'] }}. Your contribution will have a lasting impact
+        on our student
+        community.
+    </p>
+
+    <p style="margin: 0 0 10px; text-align: left; font-size: 16px; color: #000;">Once again, welcome to the {{ $ambassador['school_name'] }} Ambassador Program! We are confident that
+        your enthusiasm,
+        knowledge, and dedication will greatly benefit our students. If you have any further questions or need
+        assistance, please do not hesitate to contact us.
+    </p>
+
+    <p style="margin: 0 0 10px; text-align: left; font-size: 16px; color: #000;">Best regards</p>
+
+    <p style="margin: 0 0 10px; text-align: left;font-weight:700; font-size: 16px; color: #000;">{{ $ambassador['school_name'] }}</p>
+
+    <table style="width: 100%;margin-top: 24px;" cellpadding="0" cellspacing="0" role="none">
+        <tr>
+            <td class="sm-px-6" style="background-color: #f3f4f6; padding: 16px 48px; text-align: left; box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05)">
+                {{-- <table style="margin-left: auto; margin-right: auto; margin-bottom: 8px" cellpadding="0" cellspacing="0" role="none">
+                    <tr>
+                        <td>
+                            <img src="{{ asset('assets/images/canedu-black-logo.png') }}" alt="Canedu Logo" style="max-width: 100%; vertical-align: middle; margin-left: auto; margin-right: auto; width: 192px">
+                        </td>
+                    </tr>
+                </table> --}}
+                <table style="margin-bottom: 24px; margin-top: 16px; width: 100%" cellpadding="0" cellspacing="0" role="none">
+                    <tr>
+                        <td align="center" style="display: flex;">
+                            <div style="display: flex; margin: 0 auto;">
+                                <a aria-label="Proxima Study" target="_blank" href="https://facebook.com" style="border: 1px solid #d1d5db; display: flex; height: 40px; width: 40px; border-radius: 9999px; background-color: #fffffe;margin-right: 16px;">
+                                    <img src="{{ asset('assets/images/facebook.png') }}" alt="facebook icon" style="max-width: 100%; vertical-align: middle; height: 20px;margin-top: 10px;margin-left: 13px;">
+                                </a>
+                                <a aria-label="Proxima Study" target="_blank" href="https://twitter.com" style="border: 1px solid #d1d5db; display: flex; height: 40px; width: 40px; border-radius: 9999px; background-color: #fffffe;margin-right: 16px;">
+                                    <img src="{{ asset('assets/images/twitter.png') }}" alt="twiiter icon" style="max-width: 100%; vertical-align: middle; height: 16px;margin-top: 11px;margin-left: 10px;">
+                                </a>
+                                <a aria-label="Proxima Study" target="_blank" href="https://www.instagram.com" style="border: 1px solid #d1d5db; display: flex; height: 40px; width: 40px; border-radius: 9999px; background-color: #fffffe;margin-right: 16px;">
+                                    <img src="{{ asset('assets/images/instagram.png') }}" alt="google icon" style="max-width: 100%; vertical-align: middle; height: 20px;margin-top: 9px;margin-left: 9px;">
+                                </a>
+                                <a aria-label="Proxima Study" target="_blank" href="https://youtube.com" style="border: 1px solid #d1d5db; display: flex; height: 40px; width: 40px; border-radius: 9999px; background-color: #fffffe;margin-right: 16px;">
+                                    <img src="{{ asset('assets/images/youtube.png') }}" alt="youtube icon" style="max-width: 100%; vertical-align: middle; height: 16px;margin-top: 11px;margin-left: 8px;">
+                                </a>
+                                <a aria-label="Proxima Study" target="_blank" href="https://www.linkedin.com" style="border: 1px solid #d1d5db; display: flex; height: 40px; width: 40px; border-radius: 9999px; background-color: #fffffe;">
+                                    <img src="{{ asset('assets/images/linkedin.png') }}" alt="linkedin icon" style="max-width: 100%; vertical-align: middle; height: 16px;margin-top: 10px;margin-left: 12px;">
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <table style="margin: 8px auto" cellpadding="0" cellspacing="0" role="none">
+                    <tr>
+                        <td>
+                            <p style="margin: 0; white-space: nowrap; padding-left: 8px; padding-right: 8px; font-size: 16px; color: #000">©2025 Proxima Study. All rights reserved.</p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</div>
